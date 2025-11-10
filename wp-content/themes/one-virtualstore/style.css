@@ -1,0 +1,113 @@
+/*
+Theme Name: One Virtual Store
+Theme URI: https://github.com/daphnemartinsba/Project-VirtualStore
+Author: daphnemartinsba
+Author URI: https://github.com/daphnemartinsba
+Description: One Virtual Store is a project made by students to "Analisys and Project of Object Oriented Sofware" discipline from UFMS.  
+Version: 1.0
+Tags: ecommerce, woocommerce, custom-menu, custom-logo
+*/
+
+/* BODY - GLOBAL PAGE STRUCTURE */
+
+body{
+    display: contents;
+    
+}
+
+.page-structure{
+    padding-inline: 82px;
+    background-color: coral;
+}
+
+/* HEADER */
+
+.one-header{
+    background-color: grey;
+    display: list-item;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.page-tag, .nav-menu, .page-redirect{
+    display: inherit;
+    overflow: hidden;
+    height: 5em;
+}
+
+.page-tag{
+    float: left; 
+    align-content: center;
+    background-color: blue; 
+}
+
+.page-redirect{
+    float: right;
+    background-color: chartreuse;
+    padding-inline-start: 2em;
+    align-content: center;
+    
+}
+
+.back-button{
+    background-color: black;
+    color: white;
+    height: 44px;
+    width: 72px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 14px;
+    border-style: none;
+    cursor: pointer;
+    
+}
+
+.nav-menu{
+    background-color: aquamarine;
+}
+
+.nav-menu ul{
+    display: flex;
+    float: inline-end;
+}
+
+.nav-menu ul li{
+    display: inherit;
+    padding-inline-start: 1em;
+    background-color: purple;
+    padding-top: 1em;
+    
+}
+
+.nav-menu a{
+    text-decoration: none;
+}
+
+/* MIDDLE CONTENT */
+
+
+/* FOOTER */
+
+.one-footer{
+    background-color:rgb(0, 0, 0);
+    display: flow-root;
+}
+
+.name-store, .nav-bot{
+    display: inherit;
+    height:3em;
+}
+
+.name-store{
+    float: left;
+    align-content: center;
+    color: white;
+}
+
+.nav-bot{
+    color: white;
+}
+
+
+
+
