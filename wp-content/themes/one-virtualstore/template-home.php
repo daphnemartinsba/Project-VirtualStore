@@ -5,8 +5,9 @@ Template Name: Home Page
 
 get_header();
 ?>
-        <main class = "middle-content">
-                <section class = "firs-chapter">
+
+            <main class = "middle-content">  
+                <section class = "firs-chapter">	
                     <div class = "main-list">
                         <?php
                             if (have_posts()){
@@ -14,7 +15,7 @@ get_header();
                                     the_post();
                                     ?>
                                         <article>
-                                            <h2><?php the_title(); ?></h2>
+                                            <!--<h2><?php the_title(); ?></h2>-->
                                             <div><?php the_content(); ?></div>
                                         </article>    
                                     <?php

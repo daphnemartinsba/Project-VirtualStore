@@ -1,5 +1,25 @@
 # Project-VirtualStore
 
+<p> This is a project made for students purpose. Its a virtual store called One VirtualStore, using WordPress and WooCommerce. </p>
+
+## Tecs info
+
+- WordPress: versão 6.8.3 
+
+    - PHP: 7.2.24
+
+    - MySQL: 5.5.5
+
+- Bootstrap: versão 5.3.8-dist
+
+- HTML5
+
+- CSS3
+
+- Woocommerce: 10.3.5
+
+- WP Mail SMTP: 4.7.0
+
 ## About WordPress Archtectury
 
 ### First: the basics
@@ -39,7 +59,7 @@ Version: 1.0
 
 <p> 
 
-## WordPress Configs:
+## WordPress Basic Configs
 
 1. When trying update plugin and WP request for FTP or SSH credentials and you don't want or don't know how to use FTP:
 
@@ -108,7 +128,7 @@ Version: 1.0
  ` add_theme_support( 'block-templates' );`
 
 
-## WooCommerce Configs
+## WooCommerce Basic Config
 
 1. Install WooCommerce Pages: WP Panel -> WooCommerce -> status -> Tools -> Create default WooCommerce pages -> Click: Create Pages
 
@@ -117,8 +137,7 @@ Version: 1.0
     `add_theme_support( 'woocommerce' );`
 
     obs: if it doesn't show that theme support was add on WP Panel -> Woocommerce -> status, deactivate and reactivate your theme.
-
-3. 
+ 
 
 ## WordPress, HTML & CSS Patterns
 
@@ -173,22 +192,5 @@ Version: 1.0
  `get_page_template_slug();`
 
 
-
-
-## Tecs Info
-
-- WP: versão
-
-- PHP: versão
-
-- Bootstrap: versão 5.3.8-dist
-
-- HTML5
-- CSS3
-
 ## What is missing
-- return tag title
-- In:
-        `wp_enqueue_style('one-virtualstore-style', get_stylesheet_uri(), array(), filemtime(get_template_directory() . '/style.css'), 'all');`
-    <p> alter 'all' to '1.0', for publishing.
-
+    <p> Mainly, responsivite, but you can check backlog project for more details.</p>

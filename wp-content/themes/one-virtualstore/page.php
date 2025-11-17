@@ -10,7 +10,7 @@ get_header();
                                     the_post();
                                     ?>
                                         <article>
-                                            <h2><?php the_title(); ?></h2>
+                                            <!--<h2><?php the_title(); ?></h2>-->
                                             <div><?php the_content(); ?></div>
                                         </article>    
                                     <?php

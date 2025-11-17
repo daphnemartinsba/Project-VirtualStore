@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-09-26 18:02:21+0000\n"
+"PO-Revision-Date: 2025-11-12 18:30:51+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1462,10 +1462,6 @@ msgstr "O Clearpay permite que os clientes recebam os produtos imediatamente e p
 msgid "Paymob"
 msgstr "Paymob"
 
-#: src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php:3378
-msgid "The Payfast extension for WooCommerce enables you to accept payments by Credit Card and EFT via one of South Africa's most popular payment gateways. No setup fees or monthly subscription costs. Selecting this extension will configure your store to use South African rands as the selected currency."
-msgstr "A extensão Payfast para WooCommerce permite que você aceite pagamentos por Cartão de Crédito e EFT por meio de um dos gateways de pagamento mais populares da África do Sul. Sem taxas de configuração ou custos de assinatura mensal. Selecionar esta extensão configurará sua loja para usar rands sul-africanos como a moeda selecionada."
-
 #: src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php:3412
 msgid "Paymob is a leading payment gateway in the Middle East and Africa. Accept payments online and in-store with Paymob."
 msgstr "Paymob é um gateway de pagamento líder no Oriente Médio e na África. Aceite pagamentos online e em loja com Paymob."
@@ -1477,6 +1473,10 @@ msgstr "O PayPal Payments permite que você ofereça opções de PayPal, Venmo (
 #: src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php:3478
 msgid "Safe and secure payments using your customer's PayPal account."
 msgstr "Pagamentos seguros e protegidos usando a conta PayPal do seu cliente."
+
+#: src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php:3378
+msgid "The Payfast extension for WooCommerce enables you to accept payments by Credit Card and EFT via one of South Africa's most popular payment gateways. No setup fees or monthly subscription costs. Selecting this extension will configure your store to use South African rands as the selected currency."
+msgstr "A extensão Payfast para WooCommerce permite que você aceite pagamentos por Cartão de Crédito e EFT por meio de um dos gateways de pagamento mais populares da África do Sul. Sem taxas de configuração ou custos de assinatura mensal. Selecionar esta extensão configurará sua loja para usar rands sul-africanos como a moeda selecionada."
 
 #: src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php:3291
 msgid "Antom"
@@ -7278,8 +7278,8 @@ msgid "This order cannot be paid for."
 msgstr "Este pedido não pode ser pago."
 
 #. translators: %s: product number.
-#: src/Blocks/BlockTypes/ProductButton.php:194
-#: src/Blocks/BlockTypes/ProductButton.php:371
+#: src/Blocks/BlockTypes/ProductButton.php:195
+#: src/Blocks/BlockTypes/ProductButton.php:372
 msgid "%s in cart"
 msgstr "%s no carrinho"
 
@@ -7440,11 +7440,6 @@ msgstr "%1sview e gerenciar%2s"
 msgid "High-Performance order storage"
 msgstr "Armazenamento de pedidos de alto desempenho"
 
-#. translators: %s: number of pending orders.
-#: src/Internal/DataStores/Orders/CustomOrdersTableController.php:695
-msgid "Currently syncing orders... %s pending"
-msgstr "Atualmente sincronizando ordens . . . %d pendente"
-
 #: src/Admin/Features/OnboardingTasks/Tasks/WooCommercePayments.php:43
 #: src/Internal/Admin/RemoteFreeExtensions/DefaultFreeExtensions.php:492
 msgid "Get paid with WooPayments"
@@ -7459,6 +7454,11 @@ msgstr "⚠ 1 plug -in incompatível detectado (%s)."
 #: src/Utilities/PluginUtil.php:276
 msgid "⚠ 2 Incompatible plugins detected (%1$s and %2$s)."
 msgstr "⚠ 2 plugins incompatíveis detectados ( %1s e %2s)."
+
+#. translators: %s: number of pending orders.
+#: src/Internal/DataStores/Orders/CustomOrdersTableController.php:695
+msgid "Currently syncing orders... %s pending"
+msgstr "Atualmente sincronizando ordens . . . %d pendente"
 
 #: src/Internal/Admin/RemoteFreeExtensions/DefaultFreeExtensions.php:215
 #: src/Internal/Admin/RemoteFreeExtensions/DefaultFreeExtensions.php:231
@@ -7507,7 +7507,7 @@ msgstr "Confirmação do pedido"
 msgid "Order number used for display."
 msgstr "Número do pedido usado para exibição."
 
-#: src/Blocks/BlockTypes/ClassicTemplate.php:221
+#: src/Blocks/BlockTypes/ClassicTemplate.php:229
 msgid "Order confirmation"
 msgstr "Confirmação do pedido"
 
@@ -8169,12 +8169,6 @@ msgctxt "block style label"
 msgid "Outline"
 msgstr "Contorno"
 
-#: assets/client/admin/product-editor/blocks/generic/product-tab/block.json
-#: assets/client/admin/product-editor/blocks/generic/tab/block.json
-msgctxt "block keyword"
-msgid "tab"
-msgstr "Aba"
-
 #: assets/client/admin/product-editor/blocks/product-fields/product-summary-field/block.json
 #: assets/client/admin/product-editor/blocks/product-fields/summary/block.json
 msgctxt "block keyword"
@@ -8270,15 +8264,6 @@ msgctxt "block keyword"
 msgid "group"
 msgstr "grupo"
 
-#: assets/client/admin/product-editor/blocks/generic/product-section-description/block.json
-#: assets/client/admin/product-editor/blocks/generic/product-section/block.json
-#: assets/client/admin/product-editor/blocks/generic/section-description/block.json
-#: assets/client/admin/product-editor/blocks/generic/section/block.json
-#: assets/client/admin/product-editor/blocks/product-fields/product-details-section-description/block.json
-msgctxt "block keyword"
-msgid "section"
-msgstr "Seção"
-
 #: assets/client/admin/product-editor/blocks/generic/pricing/block.json
 #: assets/client/admin/product-editor/blocks/generic/product-pricing-field/block.json
 #: assets/client/admin/product-editor/blocks/product-fields/product-regular-price-field/block.json
@@ -8316,6 +8301,12 @@ msgstr "título"
 msgctxt "block keyword"
 msgid "name"
 msgstr "nome"
+
+#: assets/client/admin/product-editor/blocks/product-fields/name/block.json
+#: assets/client/admin/product-editor/blocks/product-fields/product-name-field/block.json
+msgctxt "block description"
+msgid "The product name."
+msgstr "O nome do produto."
 
 #: assets/client/admin/product-editor/blocks/generic/checkbox/block.json
 #: assets/client/admin/product-editor/blocks/generic/linked-product-list/block.json
@@ -8413,12 +8404,6 @@ msgstr "Contêiner para renderizar apenas blocos internos condicionalmente."
 msgctxt "block title"
 msgid "Conditional"
 msgstr "Condicional"
-
-#: assets/client/admin/product-editor/blocks/product-fields/name/block.json
-#: assets/client/admin/product-editor/blocks/product-fields/product-name-field/block.json
-msgctxt "block description"
-msgid "The product name."
-msgstr "O nome do produto."
 
 #: assets/client/admin/product-editor/blocks/product-fields/name/block.json
 #: assets/client/admin/product-editor/blocks/product-fields/product-name-field/block.json
@@ -8616,6 +8601,21 @@ msgstr "Bloco que exibe o botão carrinho quando o Mini Carrinho possui produtos
 msgctxt "block title"
 msgid "Product Reviews"
 msgstr "Revisão de produtos"
+
+#: assets/client/admin/product-editor/blocks/generic/product-tab/block.json
+#: assets/client/admin/product-editor/blocks/generic/tab/block.json
+msgctxt "block keyword"
+msgid "tab"
+msgstr "Aba"
+
+#: assets/client/admin/product-editor/blocks/generic/product-section-description/block.json
+#: assets/client/admin/product-editor/blocks/generic/product-section/block.json
+#: assets/client/admin/product-editor/blocks/generic/section-description/block.json
+#: assets/client/admin/product-editor/blocks/generic/section/block.json
+#: assets/client/admin/product-editor/blocks/product-fields/product-details-section-description/block.json
+msgctxt "block keyword"
+msgid "section"
+msgstr "Seção"
 
 #: src/Admin/Features/PaymentGatewaySuggestions/DefaultPaymentGateways.php:363
 msgid "Payoneer Checkout is the next generation of payment processing platforms, giving merchants around the world the solutions and direction they need to succeed in today’s hyper-competitive global market."
@@ -9279,6 +9279,14 @@ msgstr "Não foi possível criar ou gravar em %s durante a exportação de CSV. 
 msgid "Scheduled action for %1$s will not be executed as no callbacks are registered."
 msgstr "A ação agendada para %1$s não será executada porque nenhum retorno de chamada foi registrado."
 
+#. translators: 1) is the number of affected actions, 2) is a link to an admin
+#. screen.
+#: packages/action-scheduler/classes/ActionScheduler_AdminView.php:220
+msgid "<strong>Action Scheduler:</strong> %1$d <a href=\"%2$s\">past-due action</a> found; something may be wrong. <a href=\"https://actionscheduler.org/faq/#my-site-has-past-due-actions-what-can-i-do\" target=\"_blank\">Read documentation &raquo;</a>"
+msgid_plural "<strong>Action Scheduler:</strong> %1$d <a href=\"%2$s\">past-due actions</a> found; something may be wrong. <a href=\"https://actionscheduler.org/faq/#my-site-has-past-due-actions-what-can-i-do\" target=\"_blank\">Read documentation &raquo;</a>"
+msgstr[0] "<strong>Agendador de ações:</strong> %1$d <a href=\"%2$s\">ação vencida</a> encontrada; algo pode estar errado. <a href=\"https://actionscheduler.org/faq/#my-site-has-past-due-actions-what-can-i-do\" target=\"_blank\">Leia a documentação &raquo;</a>"
+msgstr[1] "<strong>Agendador de ações:</strong> %1$d <a href=\"%2$s\">ações vencidas</a> encontradas; algo pode estar errado. <a href=\"https://actionscheduler.org/faq/#my-site-has-past-due-actions-what-can-i-do\" target=\"_blank\">Leia a documentação &raquo;</a>"
+
 #: packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:490
 msgid "JSON partial matching not supported in your environment. Please check your MySQL/MariaDB version."
 msgstr "A correspondência parcial JSON não é suportada em seu ambiente. Verifique sua versão do MySQL/MariaDB."
@@ -9291,14 +9299,6 @@ msgstr "O tipo de valor para a correspondência parcial JSON não é compatível
 #: packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:530
 msgid "Unknown partial args matching value."
 msgstr "Valor de correspondência de argumentos parciais desconhecido."
-
-#. translators: 1) is the number of affected actions, 2) is a link to an admin
-#. screen.
-#: packages/action-scheduler/classes/ActionScheduler_AdminView.php:220
-msgid "<strong>Action Scheduler:</strong> %1$d <a href=\"%2$s\">past-due action</a> found; something may be wrong. <a href=\"https://actionscheduler.org/faq/#my-site-has-past-due-actions-what-can-i-do\" target=\"_blank\">Read documentation &raquo;</a>"
-msgid_plural "<strong>Action Scheduler:</strong> %1$d <a href=\"%2$s\">past-due actions</a> found; something may be wrong. <a href=\"https://actionscheduler.org/faq/#my-site-has-past-due-actions-what-can-i-do\" target=\"_blank\">Read documentation &raquo;</a>"
-msgstr[0] "<strong>Agendador de ações:</strong> %1$d <a href=\"%2$s\">ação vencida</a> encontrada; algo pode estar errado. <a href=\"https://actionscheduler.org/faq/#my-site-has-past-due-actions-what-can-i-do\" target=\"_blank\">Leia a documentação &raquo;</a>"
-msgstr[1] "<strong>Agendador de ações:</strong> %1$d <a href=\"%2$s\">ações vencidas</a> encontradas; algo pode estar errado. <a href=\"https://actionscheduler.org/faq/#my-site-has-past-due-actions-what-can-i-do\" target=\"_blank\">Leia a documentação &raquo;</a>"
 
 #. translators: %d is an id.
 #: packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:1178
@@ -10621,12 +10621,6 @@ msgstr "Spam"
 msgid "All dates"
 msgstr "Todas as datas"
 
-#. translators: Review time format. See
-#. https://www.php.net/manual/datetime.format.php
-#: src/Internal/Admin/ProductReviews/ReviewsListTable.php:1131
-msgid "g:i a"
-msgstr "G:i"
-
 #. translators: %s: Parent review link with review author name.
 #: src/Internal/Admin/ProductReviews/ReviewsListTable.php:1009
 msgid "In reply to %s."
@@ -10643,6 +10637,12 @@ msgstr "Desaprovar"
 msgctxt "order dates dropdown"
 msgid "%1$s %2$d"
 msgstr "%1$s %2$d"
+
+#. translators: Review time format. See
+#. https://www.php.net/manual/datetime.format.php
+#: src/Internal/Admin/ProductReviews/ReviewsListTable.php:1131
+msgid "g:i a"
+msgstr "G:i"
 
 #: src/Internal/Admin/ProductReviews/ReviewsListTable.php:464
 #: src/Internal/Admin/ProductReviews/ReviewsListTable.php:473
@@ -10897,7 +10897,7 @@ msgstr "Admin"
 msgid "TikTok for WooCommerce"
 msgstr "TikTok para WooCommerce"
 
-#: src/Admin/Features/OnboardingTasks/TaskLists.php:444
+#: src/Admin/Features/OnboardingTasks/TaskLists.php:436
 msgctxt "Admin menu name"
 msgid "Home"
 msgstr "Página inicial"
@@ -10943,11 +10943,6 @@ msgstr "Iniciando a verificação do lote #%1$d (%2$d orders/batch)."
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:404
 msgid "There are no orders to verify, aborting."
 msgstr "Não há ordens a verificar, abortando."
-
-#. Translators: %1$d is the batch number, %2$d is time taken to process batch.
-#: src/Database/Migrations/CustomOrderTable/CLIRunner.php:509
-msgid "Batch %1$d (%2$d orders) completed in %3$d seconds."
-msgstr "Lote  %1$d (%2$d pedidos) concluídos em %3$f segundos"
 
 #. Translators: %1$d is the batch number and %2$d is the batch size.
 #: src/Database/Migrations/CustomOrderTable/CLIRunner.php:218
@@ -11054,22 +11049,10 @@ msgstr "Quais recursos estão desativados?"
 msgid "Is the daily cron job active, when does it next run?"
 msgstr "O cron job diário está ativo, quando será executado?"
 
-#: assets/client/blocks/inner-blocks/checkout-order-summary-cart-items-block/block.json
-msgctxt "block description"
-msgid "Shows cart items."
-msgstr "Mostra os itens do carrinho."
-
-#: assets/client/blocks/inner-blocks/cart-items-block/block.json
-#: assets/client/blocks/inner-blocks/checkout-order-summary-cart-items-block/block.json
-msgctxt "block title"
-msgid "Cart Items"
-msgstr "Itens do carrinho"
-
-#: assets/client/blocks/inner-blocks/cart-order-summary-taxes-block/block.json
-#: assets/client/blocks/inner-blocks/checkout-order-summary-taxes-block/block.json
-msgctxt "block description"
-msgid "Shows the cart taxes row."
-msgstr "Mostra a linha de impostos do carrinho."
+#. Translators: %1$d is the batch number, %2$d is time taken to process batch.
+#: src/Database/Migrations/CustomOrderTable/CLIRunner.php:509
+msgid "Batch %1$d (%2$d orders) completed in %3$d seconds."
+msgstr "Lote  %1$d (%2$d pedidos) concluídos em %3$f segundos"
 
 #: assets/client/blocks/inner-blocks/cart-order-summary-taxes-block/block.json
 #: assets/client/blocks/inner-blocks/checkout-order-summary-taxes-block/block.json
@@ -11110,6 +11093,23 @@ msgstr "Desconto"
 msgctxt "block description"
 msgid "Shows the apply coupon form."
 msgstr "Mostra o formulário de aplicar cupom"
+
+#: assets/client/blocks/inner-blocks/checkout-order-summary-cart-items-block/block.json
+msgctxt "block description"
+msgid "Shows cart items."
+msgstr "Mostra os itens do carrinho."
+
+#: assets/client/blocks/inner-blocks/cart-items-block/block.json
+#: assets/client/blocks/inner-blocks/checkout-order-summary-cart-items-block/block.json
+msgctxt "block title"
+msgid "Cart Items"
+msgstr "Itens do carrinho"
+
+#: assets/client/blocks/inner-blocks/cart-order-summary-taxes-block/block.json
+#: assets/client/blocks/inner-blocks/checkout-order-summary-taxes-block/block.json
+msgctxt "block description"
+msgid "Shows the cart taxes row."
+msgstr "Mostra a linha de impostos do carrinho."
 
 #: assets/client/blocks/inner-blocks/cart-order-summary-fee-block/block.json
 #: assets/client/blocks/inner-blocks/checkout-order-summary-fee-block/block.json
@@ -11598,11 +11598,6 @@ msgstr "Notificação PDT recebida para o pedido %1$d no terminal para o pedido 
 msgid "Received PDT notification for another account: %1$s. Order ID: %2$d."
 msgstr "Notificação PDT recebida para outra conta: %1$s. ID do pedido: %2$d."
 
-#: assets/client/blocks/checkout/block.json
-msgctxt "block title"
-msgid "Checkout"
-msgstr "Finalização de compra"
-
 #: assets/client/blocks/accordion-group/block.json
 #: assets/client/blocks/accordion-header/block.json
 #: assets/client/blocks/accordion-item/block.json
@@ -11697,6 +11692,11 @@ msgstr "Finalização de compra"
 msgctxt "block keyword"
 msgid "WooCommerce"
 msgstr "WooCommerce"
+
+#: assets/client/blocks/checkout/block.json
+msgctxt "block title"
+msgid "Checkout"
+msgstr "Finalização de compra"
 
 #: assets/client/blocks/checkout/block.json
 msgctxt "block description"
@@ -12825,11 +12825,11 @@ msgstr "A extensão Eway para WooCommerce permite que você receba pagamentos co
 msgid "Reach more shoppers and drive sales for your store. Integrate with Google to list your products for free and launch paid ad campaigns."
 msgstr "Alcance mais compradores e impulsione as vendas da sua loja. Integre-se ao Google para listar seus produtos gratuitamente e lançar campanhas publicitárias pagas."
 
-#: src/Admin/Features/OnboardingTasks/TaskLists.php:274
+#: src/Admin/Features/OnboardingTasks/TaskLists.php:266
 msgid "Task list ID does not exist"
 msgstr "O ID da lista de tarefas não existe"
 
-#: src/Admin/Features/OnboardingTasks/TaskLists.php:254
+#: src/Admin/Features/OnboardingTasks/TaskLists.php:246
 msgid "Task list ID already exists"
 msgstr "O ID da lista de tarefas já existe"
 
@@ -13242,7 +13242,7 @@ msgstr "ID do download %d"
 msgid "Source of note."
 msgstr "Origem da observação."
 
-#: src/Admin/Features/OnboardingTasks/TaskLists.php:153
+#: src/Admin/Features/OnboardingTasks/TaskLists.php:145
 #: assets/client/admin/app/index.js:2 assets/client/admin/embed/index.js:2
 msgid "Things to do next"
 msgstr "O que fazer a seguir"
@@ -13471,7 +13471,7 @@ msgstr "Ative o plugin exclusivo do PayU para WooCommerce para começar a aceita
 msgid "PayU for WooCommerce"
 msgstr "PayU para WooCommerce"
 
-#: src/Admin/Features/OnboardingTasks/TaskLists.php:139
+#: src/Admin/Features/OnboardingTasks/TaskLists.php:131
 msgid "Get ready to start selling"
 msgstr "Prepare-se para começar a vender"
 
@@ -16617,10 +16617,6 @@ msgstr "Observação adicionada ao pedido pelo cliente durante a finalização d
 msgid "Database verified successfully."
 msgstr "Banco de dados verificado com sucesso."
 
-#: includes/rest-api/Controllers/Version2/class-wc-rest-system-status-tools-v2-controller.php:614
-msgid "Verifying database... One or more tables are still missing: "
-msgstr "Verificando banco de dados... Uma ou mais tabelas ainda estão ausentes:"
-
 #: includes/rest-api/Controllers/Version2/class-wc-rest-system-status-tools-v2-controller.php:236
 msgid "Verify base database tables"
 msgstr "Verificar tabelas de banco de dados base"
@@ -16687,6 +16683,10 @@ msgstr "Coletar e validar números de imposto da UE na finalização da compra"
 #: src/Internal/Admin/Notes/EUVATNumber.php:45
 msgid "If your store is based in the EU, we recommend using the EU VAT Number extension in addition to automated taxes. It provides your checkout with a field to collect and validate a customer's EU VAT number, if they have one."
 msgstr "Se sua loja está sediada na União Europeia, recomendamos o uso da extensão do número de imposto da UE, além dos impostos automatizados. Ele fornece à sua finalização de compra um campo para coletar e validar o número de imposto da UE de um cliente, se ele tiver um."
+
+#: includes/rest-api/Controllers/Version2/class-wc-rest-system-status-tools-v2-controller.php:614
+msgid "Verifying database... One or more tables are still missing: "
+msgstr "Verificando banco de dados... Uma ou mais tabelas ainda estão ausentes:"
 
 #: src/Internal/Admin/Notes/OnlineClothingStore.php:84
 msgid "Start your online clothing store"
@@ -18610,12 +18610,6 @@ msgstr "Quando verdadeiro, envia um link por e-mail para baixar a exportação p
 msgid "Parameters to pass on to the exported report."
 msgstr "Parâmetros a serem transmitidos para o relatório exportado."
 
-#: src/Admin/API/Reports/Coupons/Stats/Segmenter.php:284
-#: src/Admin/API/Reports/Orders/Stats/Segmenter.php:378
-#: src/Admin/API/Reports/Products/Stats/Segmenter.php:169
-msgid "product_includes parameter need to specify exactly one product when segmenting by variation."
-msgstr "O parâmetro product_includes precisa especificar exatamente um produto ao segmentar por variação."
-
 #: src/Admin/API/Reports/Coupons/Stats/Controller.php:163
 #: src/Admin/API/Reports/Orders/Stats/Controller.php:372
 #: src/Admin/API/Reports/Products/Stats/Controller.php:241
@@ -18681,10 +18675,6 @@ msgstr "Vendas líquidas."
 #: src/Admin/API/Reports/Coupons/Stats/Controller.php:154
 msgid "Limit result set to coupons assigned specific coupon IDs."
 msgstr "Limita os resultados para cupons atribuídos a IDs específicos de cupons."
-
-#: src/Admin/API/Reports/Revenue/Stats/Controller.php:153
-msgid "Total of shipping."
-msgstr "Total de entrega. "
 
 #: src/Admin/API/Reports/Categories/Controller.php:135
 #: src/Admin/API/Reports/Revenue/Stats/Controller.php:123
@@ -18774,6 +18764,16 @@ msgstr "Estatísticas sobre downloads de produtos."
 #: src/Admin/API/Reports/Export/Controller.php:136
 msgid "Export download URL."
 msgstr "Exportar URL do download."
+
+#: src/Admin/API/Reports/Revenue/Stats/Controller.php:153
+msgid "Total of shipping."
+msgstr "Total de entrega. "
+
+#: src/Admin/API/Reports/Coupons/Stats/Segmenter.php:284
+#: src/Admin/API/Reports/Orders/Stats/Segmenter.php:378
+#: src/Admin/API/Reports/Products/Stats/Segmenter.php:169
+msgid "product_includes parameter need to specify exactly one product when segmenting by variation."
+msgstr "O parâmetro product_includes precisa especificar exatamente um produto ao segmentar por variação."
 
 #: src/Admin/API/NoteActions.php:37
 msgid "Unique ID for the Note Action."
@@ -19173,10 +19173,6 @@ msgstr "ação completa por %s"
 msgid "action failed via %1$s: %2$s"
 msgstr "ação malsucedida por %1$s: %2$s"
 
-#: src/Internal/Admin/Settings.php:316
-msgid "Excluded report order statuses"
-msgstr "Status de pedido excluídos do relatório "
-
 #. translators: %s: exception message
 #: packages/action-scheduler/classes/abstracts/ActionScheduler_Logger.php:238
 msgid "There was a failure scheduling the next instance of this action: %s"
@@ -19191,6 +19187,10 @@ msgstr "Uma nova fila iniciou o processamento. <a href=\"%s\">Exibir ações em 
 #: packages/action-scheduler/classes/abstracts/ActionScheduler_Store.php:377
 msgid "ActionScheduler_Action::$args too long. To ensure the args column can be indexed, action args should not be more than %d characters when encoded as JSON."
 msgstr "O ActionScheduler_Action::$args é muito longo. Para garantir que a coluna args possa ser indexada, args de ação não devem ter mais de %d caracteres quando codificados como JSON."
+
+#: src/Internal/Admin/Settings.php:316
+msgid "Excluded report order statuses"
+msgstr "Status de pedido excluídos do relatório "
 
 #: packages/action-scheduler/classes/ActionScheduler_AdminView.php:305
 #: assets/client/admin/chunks/4706.js:1
@@ -19450,6 +19450,22 @@ msgstr "Filtrar produtos por preço mínimo"
 msgid "Center"
 msgstr "Centro"
 
+#: src/Internal/Admin/EmailPreview/EmailPreview.php:479
+#: assets/client/blocks/active-filters-frontend.js:6
+#: assets/client/blocks/active-filters-wrapper-frontend.js:6
+#: assets/client/blocks/active-filters.js:6
+#: assets/client/blocks/add-to-cart-with-options-variation-selector-attribute.js:1
+#: assets/client/blocks/add-to-cart-with-options-variation-selector.js:1
+#: assets/client/blocks/cart.js:2 assets/client/blocks/checkout.js:2
+#: assets/client/blocks/featured-category.js:2
+#: assets/client/blocks/featured-product.js:2
+#: assets/client/blocks/mini-cart-contents.js:1
+#: assets/client/blocks/product-filter-active.js:1
+#: assets/client/blocks/wc-blocks-data.js:3
+#: assets/client/blocks/wc-cart-checkout-base-frontend.js:40
+msgid "Color"
+msgstr "Cor"
+
 #: src/Internal/Admin/EmailPreview/EmailPreview.php:480
 #: assets/client/blocks/active-filters-frontend.js:6
 #: assets/client/blocks/active-filters-wrapper-frontend.js:6
@@ -19476,22 +19492,6 @@ msgstr "Pequeno"
 #: assets/client/blocks/wc-cart-checkout-base-frontend.js:40
 msgid "Size"
 msgstr "Tamanho"
-
-#: src/Internal/Admin/EmailPreview/EmailPreview.php:479
-#: assets/client/blocks/active-filters-frontend.js:6
-#: assets/client/blocks/active-filters-wrapper-frontend.js:6
-#: assets/client/blocks/active-filters.js:6
-#: assets/client/blocks/add-to-cart-with-options-variation-selector-attribute.js:1
-#: assets/client/blocks/add-to-cart-with-options-variation-selector.js:1
-#: assets/client/blocks/cart.js:2 assets/client/blocks/checkout.js:2
-#: assets/client/blocks/featured-category.js:2
-#: assets/client/blocks/featured-product.js:2
-#: assets/client/blocks/mini-cart-contents.js:1
-#: assets/client/blocks/product-filter-active.js:1
-#: assets/client/blocks/wc-blocks-data.js:3
-#: assets/client/blocks/wc-cart-checkout-base-frontend.js:40
-msgid "Color"
-msgstr "Cor"
 
 #: includes/admin/class-wc-admin-brands.php:147
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:185
@@ -22369,6 +22369,10 @@ msgstr "Status da avaliação."
 msgid "Unique identifier for the product."
 msgstr "Identificador exclusivo do produto."
 
+#: includes/admin/views/html-notice-template-check.php:21
+msgid "Update your theme to the latest version. If no update is available contact your theme author asking about compatibility with the current WooCommerce version."
+msgstr "Atualize seu tema para a versão mais recente. Se nenhuma atualização estiver disponível, entre em contato com o autor do seu tema perguntando sobre a compatibilidade com a versão atual do WooCommerce."
+
 #: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:940
 #: src/StoreApi/Schemas/V1/ProductReviewSchema.php:144
 msgid "Avatar URLs for the object reviewer."
@@ -22381,10 +22385,6 @@ msgstr "Visualizar modelos afetados"
 #: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:660
 msgid "The object has already been trashed."
 msgstr "O objeto já esta na lixeira."
-
-#: includes/admin/views/html-notice-template-check.php:21
-msgid "Update your theme to the latest version. If no update is available contact your theme author asking about compatibility with the current WooCommerce version."
-msgstr "Atualize seu tema para a versão mais recente. Se nenhuma atualização estiver disponível, entre em contato com o autor do seu tema perguntando sobre a compatibilidade com a versão atual do WooCommerce."
 
 #: includes/emails/class-wc-email-customer-completed-order.php:101
 msgid "Thanks for shopping with us"
@@ -22408,10 +22408,6 @@ msgstr "ID de instância de entrega."
 msgid "Limit response to reviews published before a given ISO8601 compliant date."
 msgstr "Limita resposta para avaliações publicados depois de uma data especifica no formato ISO8601."
 
-#: src/StoreApi/Routes/V1/Products.php:169
-msgid "Limit response to resources created after a given ISO8601 compliant date."
-msgstr "Limita resposta para recursos publicados depois de uma data especifica no formato ISO8601. "
-
 #: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:870
 #: src/StoreApi/Schemas/V1/ProductReviewSchema.php:77
 msgid "Unique identifier for the product that the review belongs to."
@@ -22424,6 +22420,10 @@ msgstr "Recursos suportados para este sistema de pagamento."
 #: includes/class-wc-privacy.php:67 includes/class-wc-privacy.php:73
 msgid "WooCommerce Customer Downloads"
 msgstr "Downloads de clientes do WooCommerce"
+
+#: src/StoreApi/Routes/V1/Products.php:169
+msgid "Limit response to resources created after a given ISO8601 compliant date."
+msgstr "Limita resposta para recursos publicados depois de uma data especifica no formato ISO8601. "
 
 #: includes/rest-api/Controllers/Version3/class-wc-rest-order-notes-controller.php:128
 #: src/RestApi/Routes/V4/OrderNotes/Schema/OrderNoteSchema.php:52
@@ -26730,10 +26730,6 @@ msgstr "Sem permissão para editar este recurso."
 msgid "Customer sales"
 msgstr "Vendas por clientes"
 
-#: includes/admin/views/html-admin-page-status-report.php:283
-msgid "cURL version"
-msgstr "Versão do cURL"
-
 #: includes/admin/views/html-admin-page-status-report.php:314
 msgid "Max upload size"
 msgstr "Tamanho máximo de upload"
@@ -26774,6 +26770,10 @@ msgstr "Separador de milhares"
 #: includes/admin/views/html-admin-page-status-report.php:718
 msgid "Currency position"
 msgstr "Posição da moeda"
+
+#: includes/admin/views/html-admin-page-status-report.php:283
+msgid "cURL version"
+msgstr "Versão do cURL"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:606
 msgid "Customer provided note:"
@@ -27316,8 +27316,8 @@ msgstr "Você não pode adicionar outro \"%s\" em seu carrinho."
 #: includes/class-wc-cart.php:1222 includes/class-wc-cart.php:1292
 #: includes/class-wc-frontend-scripts.php:712
 #: includes/wc-cart-functions.php:133 includes/wc-template-functions.php:2446
-#: src/Blocks/BlockTypes/ProductButton.php:396
 #: src/Blocks/BlockTypes/ProductButton.php:397
+#: src/Blocks/BlockTypes/ProductButton.php:398
 msgid "View cart"
 msgstr "Ver carrinho"
 
@@ -27802,6 +27802,12 @@ msgstr "Limita o conjunto de resultados para produtos com uma classe de impostos
 msgid "Shipping methods do not support trashing."
 msgstr "Métodos de entrega não suportam lixeira."
 
+#: includes/rest-api/Controllers/Version2/class-wc-rest-product-reviews-v2-controller.php:169
+#: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:864
+#: src/StoreApi/Schemas/V1/ProductReviewSchema.php:70
+msgid "The date the review was created, as GMT."
+msgstr "A data que a avaliação foi criada, em GMT."
+
 #: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:1910
 #: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:2387
 #: includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:840
@@ -27811,12 +27817,6 @@ msgstr "Métodos de entrega não suportam lixeira."
 #: includes/rest-api/Controllers/Version4/Products/class-wc-rest-products-v4-controller.php:1364
 msgid "Number of times downloadable files can be downloaded after purchase."
 msgstr "Número de vezes que os arquivos podem ser baixados depois da compra."
-
-#: includes/rest-api/Controllers/Version2/class-wc-rest-product-reviews-v2-controller.php:169
-#: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:864
-#: src/StoreApi/Schemas/V1/ProductReviewSchema.php:70
-msgid "The date the review was created, as GMT."
-msgstr "A data que a avaliação foi criada, em GMT."
 
 #: includes/rest-api/Controllers/Version2/class-wc-rest-payment-gateways-v2-controller.php:441
 #: includes/rest-api/Controllers/Version2/class-wc-rest-setting-options-v2-controller.php:567
@@ -31528,12 +31528,6 @@ msgstr "Classe de impostos do produto."
 msgid "Line subtotal tax (before discounts)."
 msgstr "Imposto do subtotal da linha (antes dos descontos)."
 
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1024
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1270
-#: src/RestApi/Routes/V4/Orders/Schema/OrderSchema.php:224
-msgid "True the prices included tax during checkout."
-msgstr "Verdadeiro quando os preços incluem impostos durante a finalização de compra."
-
 #: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:440
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1337
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1484
@@ -31549,6 +31543,12 @@ msgstr "Verdadeiro quando os preços incluem impostos durante a finalização de
 #: src/RestApi/Routes/V4/Orders/Schema/OrderShippingSchema.php:66
 msgid "Line total tax (after discounts)."
 msgstr "Imposto do total da linha (depois dos descontos)."
+
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1024
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1270
+#: src/RestApi/Routes/V4/Orders/Schema/OrderSchema.php:224
+msgid "True the prices included tax during checkout."
+msgstr "Verdadeiro quando os preços incluem impostos durante a finalização de compra."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:446
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1342
@@ -31730,6 +31730,11 @@ msgstr "Tipo de download, isto controla o schema na interface."
 msgid "Line item meta data."
 msgstr "Metadados do item."
 
+#: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:489
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1385
+msgid "Meta label."
+msgstr "Rótulo do metadado."
+
 #: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:483
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1379
 #: includes/rest-api/Controllers/Version2/class-wc-rest-coupons-v2-controller.php:533
@@ -31783,11 +31788,6 @@ msgstr "Chave do metadado."
 #: src/StoreApi/Schemas/V1/CartShippingRateSchema.php:199
 msgid "Meta value."
 msgstr "Valor do metadado."
-
-#: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:489
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1385
-msgid "Meta label."
-msgstr "Rótulo do metadado."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1247
 #: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1294
@@ -32602,10 +32602,6 @@ msgstr "O seu tema tem um arquivo woocommerce.php, você não será capaz de sob
 msgid "MaxMind GeoIP database."
 msgstr "Banco de dados GeoIP do  MaxMind."
 
-#: includes/rest-api/Controllers/Version2/class-wc-rest-system-status-v2-controller.php:252
-msgid "cURL version."
-msgstr "Versão do cURL."
-
 #: includes/admin/settings/views/html-webhooks-edit.php:124
 msgid "The secret key is used to generate a hash of the delivered webhook and provided in the request headers."
 msgstr "A chave secreta é utilizada para gerar um hash com dados entregues pelo webhook e é disponibilizada no cabeçalho da requisição."
@@ -32639,6 +32635,10 @@ msgstr "O ID da página foi definido, mas a página não existe"
 #: assets/client/admin/chunks/5875.js:1
 msgid "Rest of the world"
 msgstr "Resto do mundo"
+
+#: includes/rest-api/Controllers/Version2/class-wc-rest-system-status-v2-controller.php:252
+msgid "cURL version."
+msgstr "Versão do cURL."
 
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:92
 #: includes/admin/settings/views/html-admin-page-shipping-zones.php:125
@@ -35778,14 +35778,6 @@ msgstr "Numero da agência"
 msgid "This controls the description which the user sees during checkout."
 msgstr "Isto controla a descrição que o usuário vê durante a finalização de compra."
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:128
-#: includes/gateways/cheque/class-wc-gateway-cheque.php:97
-#: assets/client/admin/chunks/settings-payments-bacs.js:1
-#: assets/client/admin/chunks/settings-payments-cheque.js:1
-#: assets/client/admin/chunks/settings-payments-cod.js:1
-msgid "Instructions that will be added to the thank you page and emails."
-msgstr "Instruções a serem adicionadas na página e em e-mails de agradecimento."
-
 #: includes/emails/class-wc-email-cancelled-order.php:181
 #: includes/emails/class-wc-email-customer-cancelled-order.php:180
 #: includes/emails/class-wc-email-customer-pos-refunded-order.php:314
@@ -35801,6 +35793,14 @@ msgstr "Instruções a serem adicionadas na página e em e-mails de agradeciment
 #: includes/shipping/legacy-free-shipping/class-wc-shipping-legacy-free-shipping.php:99
 msgid "Enable/Disable"
 msgstr "Ativar/Desativar"
+
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:128
+#: includes/gateways/cheque/class-wc-gateway-cheque.php:97
+#: assets/client/admin/chunks/settings-payments-bacs.js:1
+#: assets/client/admin/chunks/settings-payments-cheque.js:1
+#: assets/client/admin/chunks/settings-payments-cod.js:1
+msgid "Instructions that will be added to the thank you page and emails."
+msgstr "Instruções a serem adicionadas na página e em e-mails de agradecimento."
 
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:122
 msgid "Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account."
@@ -35941,7 +35941,7 @@ msgstr "Autor: %s"
 #. translators: %d: Page number.
 #. translators: %d is the page number (1, 2, 3...).
 #: includes/class-wc-breadcrumb.php:377
-#: includes/class-wc-template-loader.php:516
+#: includes/class-wc-template-loader.php:521
 #: assets/client/blocks/all-products-frontend.js:2
 #: assets/client/blocks/all-products-frontend.js:3
 #: assets/client/blocks/all-products-frontend.js:4
@@ -36797,11 +36797,6 @@ msgstr "Sua sessão expirou. <a href=\"%s\" class=\"wc-backward\">Voltar para a 
 msgid "Parent %s:"
 msgstr "%s ascendente:"
 
-#. translators: %s: attribute name
-#: includes/class-wc-post-types.php:240
-msgid "Parent %s"
-msgstr "%s ascendente "
-
 #: includes/class-wc-post-types.php:528
 #: assets/client/admin/chunks/analytics-report-coupons.js:1
 #: assets/client/admin/chunks/analytics-report-orders.js:1
@@ -36869,6 +36864,11 @@ msgstr "(incl. imposto)"
 #: includes/class-wc-countries.php:541
 msgid "(ex. VAT)"
 msgstr "(ex. VAT)"
+
+#. translators: %s: attribute name
+#: includes/class-wc-post-types.php:240
+msgid "Parent %s"
+msgstr "%s ascendente "
 
 #: src/Internal/Admin/Orders/ListTable.php:1743
 #: src/Internal/Features/ProductBlockEditor/ProductTemplates/ProductVariationTemplate.php:221
@@ -38154,25 +38154,6 @@ msgstr "Escolha se essa é ou não uma taxa composta. Taxas de imposto compostas
 msgid "Choose whether or not this tax rate also gets applied to shipping."
 msgstr "Escolha se esta taxa de imposto será aplicada ou não à entrega."
 
-#: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:454
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1350
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1423
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1498
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1563
-#: includes/rest-api/Controllers/Version2/class-wc-rest-order-refunds-v2-controller.php:523
-#: includes/rest-api/Controllers/Version2/class-wc-rest-order-refunds-v2-controller.php:608
-#: includes/rest-api/Controllers/Version2/class-wc-rest-order-refunds-v2-controller.php:714
-#: includes/rest-api/Controllers/Version2/class-wc-rest-order-refunds-v2-controller.php:806
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1561
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1675
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1781
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1873
-#: src/Admin/API/Reports/Taxes/Controller.php:125
-#: src/RestApi/Routes/V4/Orders/Schema/AbstractLineItemSchema.php:104
-#: src/RestApi/Routes/V4/Orders/Schema/OrderTaxSchema.php:52
-msgid "Tax rate ID."
-msgstr "ID da taxa de imposto."
-
 #: includes/admin/settings/class-wc-settings-tax.php:253
 #: includes/admin/settings/views/html-settings-tax.php:37
 msgid "Tax name"
@@ -38205,6 +38186,25 @@ msgstr "Esta opção determina qual endereço é usado para calcular os impostos
 #: includes/admin/settings/views/settings-tax.php:46
 msgid "Shipping tax class"
 msgstr "Classe do imposto de entrega"
+
+#: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:454
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1350
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1423
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1498
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1563
+#: includes/rest-api/Controllers/Version2/class-wc-rest-order-refunds-v2-controller.php:523
+#: includes/rest-api/Controllers/Version2/class-wc-rest-order-refunds-v2-controller.php:608
+#: includes/rest-api/Controllers/Version2/class-wc-rest-order-refunds-v2-controller.php:714
+#: includes/rest-api/Controllers/Version2/class-wc-rest-order-refunds-v2-controller.php:806
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1561
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1675
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1781
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1873
+#: src/Admin/API/Reports/Taxes/Controller.php:125
+#: src/RestApi/Routes/V4/Orders/Schema/AbstractLineItemSchema.php:104
+#: src/RestApi/Routes/V4/Orders/Schema/OrderTaxSchema.php:52
+msgid "Tax rate ID."
+msgstr "ID da taxa de imposto."
 
 #: includes/admin/settings/views/settings-tax.php:59
 msgid "Round tax at subtotal level, instead of rounding per line"
@@ -39429,6 +39429,14 @@ msgstr "Imposto"
 msgid "Add tax"
 msgstr "Adicionar imposto"
 
+#: includes/admin/meta-boxes/views/html-order-items.php:501
+msgid "Or, enter tax rate ID:"
+msgstr "Ou, adicione o ID da taxa de imposto:"
+
+#: includes/admin/reports/class-wc-report-sales-by-date.php:492
+msgid "This is the sum of the order totals after any refunds and including shipping and taxes."
+msgstr "Esta é a soma dos totais do pedido depois de qualquer reembolso incluindo entrega e impostos."
+
 #: includes/admin/importers/class-wc-product-csv-importer-controller.php:624
 #: includes/admin/importers/class-wc-product-csv-importer-controller.php:810
 #: includes/admin/meta-boxes/views/html-order-items.php:479
@@ -39443,10 +39451,6 @@ msgstr "Adicionar imposto"
 msgid "Tax class"
 msgstr "Classe de imposto"
 
-#: includes/admin/meta-boxes/views/html-order-items.php:501
-msgid "Or, enter tax rate ID:"
-msgstr "Ou, adicione o ID da taxa de imposto:"
-
 #: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:1947
 #: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:2406
 #: includes/rest-api/Controllers/Version1/class-wc-rest-taxes-v1-controller.php:693
@@ -39457,10 +39461,6 @@ msgstr "Ou, adicione o ID da taxa de imposto:"
 #: includes/rest-api/Controllers/Version4/Products/class-wc-rest-products-v4-controller.php:1394
 msgid "Tax class."
 msgstr "Classe de imposto."
-
-#: includes/admin/reports/class-wc-report-sales-by-date.php:492
-msgid "This is the sum of the order totals after any refunds and including shipping and taxes."
-msgstr "Esta é a soma dos totais do pedido depois de qualquer reembolso incluindo entrega e impostos."
 
 #: includes/admin/reports/class-wc-report-sales-by-date.php:510
 msgid "This is the sum of the order totals after any refunds and excluding shipping and taxes."
@@ -43025,10 +43025,6 @@ msgstr "Entrega:"
 msgid "Download %d"
 msgstr "Download %d"
 
-#: includes/admin/class-wc-admin-assets.php:633
-msgid "Are you sure you want to revoke access to this download?"
-msgstr "Tem certeza de que quer revogar o acesso a este download?"
-
 #. translators: 1: current item count
 #. translators: %d: downloads count
 #: includes/admin/helper/class-wc-helper.php:475
@@ -43048,6 +43044,10 @@ msgid_plural "Downloads"
 msgstr[0] "Download"
 msgstr[1] "Downloads"
 
+#: includes/admin/class-wc-admin-assets.php:633
+msgid "Are you sure you want to revoke access to this download?"
+msgstr "Tem certeza de que quer revogar o acesso a este download?"
+
 #. translators: 1: GitHub issues URL 2: GitHub contribution guide URL 3: System
 #. status report URL
 #: includes/admin/class-wc-admin-help.php:68
@@ -43065,7 +43065,7 @@ msgstr "Você esta certo que deseja proceder com este reembolso? Esta operação
 #: includes/abstracts/abstract-wc-product.php:2094
 #: includes/class-wc-product-simple.php:62
 #: packages/email-editor/src/Integrations/WooCommerce/Renderer/Blocks/class-product-button.php:72
-#: src/Blocks/BlockTypes/ProductButton.php:142
+#: src/Blocks/BlockTypes/ProductButton.php:143
 #: assets/client/blocks/add-to-cart-form.js:1
 #: assets/client/blocks/add-to-cart-with-options.js:1
 #: assets/client/blocks/all-products.js:1

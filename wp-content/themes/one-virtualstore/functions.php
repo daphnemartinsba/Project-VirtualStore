@@ -22,6 +22,8 @@ function one_virtualstore_scripts(){
 
 add_action('wp_enqueue_scripts', 'one_virtualstore_scripts');
 
+// display template editor in edit mode on pages and posts edition
+add_theme_support( 'block-templates' );
 
 // everything created in the following function will be executated when the hook 'after-setup-theme' is available
 function one_virtualstore_config(){
@@ -36,56 +38,31 @@ function one_virtualstore_config(){
     // add theme support for woocommerce and 
     add_theme_support( 'woocommerce', 
         array(
-            'thumbnail_image_width' => 255,
-            'single_image_width'    => 255,
+            'thumbnail_image_width' => 500,
+            'single_image_width'    => 532,
             'product_grid'          => array(
-                'defaut_rows'     => 10,
-                'min_rows'        => 5,
-                'max_rows'        => 10,
-                'default_columns' => 1,
+                'defaut_rows'     => 3  ,
+                'min_rows'        => 1,
+                'max_rows'        => 3,
+                'default_columns' => 3,
                 'min_columns'     => 1,
-                'max_columns'     => 1,  
+                'max_columns'     => 3,  
             )
         )  
     );
     add_theme_support( 'wc-product-gallery-zoom' );
     add_theme_support( 'wc-product-gallery-lightbox' );
     add_theme_support( 'wc-product-gallery-slider' );
+
+    if(! isset($content_width)){
+        $content_width = 600;
+    }
 }
     
 add_action('after_setup_theme', 'one_virtualstore_config', 0 );
-    
-// display template editor in edit mode on pages and posts edition
-add_theme_support( 'block-templates' );
 
-
-/* PÁGINAS SHOP */
-
-# adicionando div antes do conteúdo (ficou logo após o header), da página shop
-add_action('woocommerce_before_main_content', 'one_virtualstore_open_container_row', 5);
-function one_virtualstore_open_container_row(){
-    echo '<div class="container shop-content"><div class="row">';
+// If WC isn't activated, the redirect to wc-modifications doesn't occur, and web site doesn't breaks 
+if(class_exists('WooCommerce')){
+    require get_template_directory() . '/inc/wc-modifications.php';
 }
 
-# 
-add_action('woocommerce_before_main_content', 'one_virtualstore_close_container_row');
-function one_virtualstore_close_container_row(){
-    echo '</div></div>';
-}
-
-add_action('woocommerce_before_main_content', 'one_virtualstore_add_sidebar_tags', 6);
-function one_virtualstore_add_sidebar_tags(){
-    echo '<div class="sidebar-shop col-lg-3 col-md-4 order-2 order-md-1"';
-}
-
-add_action('woocommerce_before_main_content', 'one_virtualstore_close_sidebar_tags', 8);
-function one_virtualstore_close_sidebar_tags(){
-    echo '</div>';
-}
-
-add_action('woocommerce_before_main_content', 'one_virtualstore_add_shop_tags', 9);
-
-# Remove sidebar da página shop do woocommerce
-remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
-#adiciona side bar antes do before main content
-add_action('woocommerce_before_main_content', 'woocommerce_get_sidebar', 7);

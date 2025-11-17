@@ -1,5 +1,5 @@
 <?php 
-get_header();
+    get_header();
 ?>
                     <div class = "page-content">
                         <?php
@@ -22,5 +22,7 @@ get_header();
                         
                         ?>                    
                     </div>
-<?php get_footer();?>
+<?php 
+    get_footer();
+?>
 
