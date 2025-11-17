@@ -193,4 +193,5 @@ Version: 1.0
 
 
 ## What is missing
+
     <p> Mainly, responsivite, but you can check backlog project for more details.</p>
