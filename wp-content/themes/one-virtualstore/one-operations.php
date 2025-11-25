@@ -20,7 +20,7 @@ include_once('one-query.php');
                 $message = $_POST['mensagem'];
 
                 $this->consult->insert($first_name, $last_name, $email, $message);
-
+                
             }
         }
     } 

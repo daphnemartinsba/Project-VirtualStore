@@ -31,14 +31,14 @@ get_header();
                 <section class="second-chapter">
                     <div class="one-form">   
                         <h2>Fale conosco</h2>
-                        <form method="POST">
+                        <form method="POST" >
                             <div class="form-name">
                                 <label>Nome</label>
                                 <br>
                                 <input type="text" name="nome" class="input-name">    
                             </div>
                             <label>Sobrenome</label>
-                            <div class="form-lastname"">
+                            <div class="form-lastname">
                                 <input type="text" name="sobrenome" class="input-lastname">
                             </div>
                             <br>
@@ -56,9 +56,14 @@ get_header();
                             <br>
                             <button class="form-btn" name="btn-send" type="submit">Enviar</button>     
                             <?php
-                                $posting->store();
-                               
+                                $posting->store();                           
                             ?>   
+                            <!-- Script para impedir o reenvio de dados do método post do php ao atualizar a página -->
+                            <script>
+                                if ( window.history.replaceState ) {
+                                    window.history.replaceState( null, null, window.location.href );
+                                }
+                            </script>
                         </form>
                     </div>
                 </section>

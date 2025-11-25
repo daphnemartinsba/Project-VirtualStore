@@ -5,13 +5,14 @@
         private $result;
         private $conn;
         private $getting;
+        private $database;
 
         
         
         public function __construct(){
-            $database = new OneConnection();
-            $this->conn = $database->connect();
-            $this->getting = $database->getConnection();
+            $this->database = new OneConnection();
+            $this->conn = $this->database->connect();
+            $this->getting = $this->database->getConnection();
         }
 
         public function insert($first_name, $last_name, $email, $message){
@@ -22,6 +23,7 @@
             if (!$this->result){
                 echo "Error executing query: "   . mysqli_error($this->conn);
             }
+            mysqli_close($this->conn);
 
         }
         
@@ -41,7 +43,7 @@
                 // Print MySQL error
                 echo "Error executing query: "   . mysqli_error($this->conn);
             }
-
+            mysqli_close($this->conn);
             return $this->result;
         }
         
