@@ -121,7 +121,64 @@ body{
     width: 556px;   
 }
 
+.about-content{
+    display: -ms-flexbox;
+    
+}
+
 .wp-image-235{
+    border-radius: 8px;
+}
+
+.one-form{
+    width: 50%;
+    height: auto;
+    overflow: visible;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.one-form .input-name, .one-form .input-lastname{
+    width: 250px;
+    height: 48px;
+    display: -ms-flexbox;
+    border: solid 1px;
+    border-color: #D9D9D9;
+    border-radius: 8px;
+}
+
+.one-form .form-name{
+    float: left;
+    margin-right: 5%;
+}
+
+.input-mail{
+    width: 93.5%;
+    height: 48px;
+    border: solid 1px;
+    border-color: #D9D9D9;
+    border-radius: 8px;
+}
+
+.form-btn{
+    border-style: none;
+    width: 94.5%;
+    border-radius: 8px;
+    height: 62px;
+    background-color: black;
+    color: white;
+    font-family: "inter", sans-serif;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 20px;
+
+}
+
+.form-text{
+    width: 93.5%;
+    height: 162px;
+    border: solid 1px;
+    border-color: #D9D9D9;
     border-radius: 8px;
 }
 
